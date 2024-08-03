@@ -41,7 +41,7 @@ PATH_DEP_DIR = $(call ReadLoc, "dependencies")
 PATH_CONF_DIR = $(call ReadLoc, "config")
 
 PYTHON = python3
-PYFLAGS = -p "/opt/homebrew/bin/python3"
+PYFLAGS = -p "/usr/bin/python3"
 
 .PHONY: build
 build: clean
