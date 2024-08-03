@@ -23,9 +23,13 @@ def main():
                 print("No key-value pairs found.")
                 return
             if l.write() is False:
-                print("Ensure all keys are present. Required keys: " + str(l.get_required()))
+                print("Ensure all keys are present. Required keys: " +
+                      str(l.get_required()))
                 return
             print("New loc file created.")
+            print("Creating specified directories.")
+            l.create_dirs()
+            print("Directories created.")
             return
         if sys.argv[i] == "-a" or sys.argv[i] == "--add":
             l.read()
