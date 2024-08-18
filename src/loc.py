@@ -13,7 +13,7 @@ class Loc:
         self.APP_NAME = "loc-maker"
         self.HOME_DIR = get_home_dir()
         self.FILE_NAME = os.path.join(self.HOME_DIR, ".loc.json")
-        self.dirs = ["bin", "dependencies", "config", "scripts", "workspace"]
+        self.dirs = ["bin", "library", "config", "scripts", "workspace"]
         self.paths = {}
 
     def write(self):

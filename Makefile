@@ -70,7 +70,7 @@ install: uninstall
 	echo "cnstalling $(APP)..."
 	mkdir -p $(PATH_BIN_DIR)
 	mkdir -p $(PATH_DEP_DIR)
-	mkdir -p $(PATH_CONF_DIR)'
+	mkdir -p $(PATH_CONF_DIR)
 	echo "copying files..."
 	cp -r $(BIN_DIR)/$(APP) $(PATH_BIN_DIR) 2>/dev/null || :
 	cp -r $(DEP_DIR)/* $(PATH_DEP_DIR) 2>/dev/null || :
